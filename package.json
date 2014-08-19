@@ -1,0 +1,18 @@
+{
+  "name": "event-loop-lag",
+  "version": "1.0.0",
+  "description": "Measure event loop lag",
+  "main": "event-loop-lag.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "author": "Aaron Heckmann <aaron.heckmann+github@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "1.0.4"
+  },
+  "devDependencies": {
+    "mocha": "^1.21.4",
+    "istanbul-harmony": "^0.3.0"
+  }
+}
