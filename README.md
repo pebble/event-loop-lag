@@ -2,6 +2,10 @@
 
 Measures Node.js event loop lag.
 
+[![Build Status](https://travis-ci.org/pebble/event-loop-lag.svg?branch=master)](https://travis-ci.org/pebble/event-loop-lag)
+[![Coverage Status](https://img.shields.io/coveralls/pebble/event-loop-lag.svg)](https://coveralls.io/r/pebble/event-loop-lag)
+[![npm](http://img.shields.io/npm/v/event-loop-lag.svg)](https://www.npmjs.org/package/event-loop-lag)
+
 ```js
 var interval = 1000; // how often to refresh our measurement
 var lag = require('event-loop-lag')(interval);
