@@ -17,7 +17,7 @@ module.exports = exports = function eventLoopLag(ms){
   var start = time();
   var delay = 0;
 
-  setTimeout(check, ms);
+  setTimeout(check, ms).unref();
 
   function check(){
     // how much time has actually elapsed in the loop beyond what
@@ -25,7 +25,7 @@ module.exports = exports = function eventLoopLag(ms){
     var t = time();
     delay = t - start - ms;
     start = t;
-    setTimeout(check, ms);
+    setTimeout(check, ms).unref();
   }
 
   return function() {
