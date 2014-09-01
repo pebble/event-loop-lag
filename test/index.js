@@ -17,7 +17,7 @@ describe('event-loop-lag', function() {
 
   it('returns a function', function(done) {
     var fn = lag(100);
-    assert.equal('function', typeof lag);
+    assert.equal('function', typeof fn);
     done();
   });
 
