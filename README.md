@@ -17,7 +17,7 @@ console.log('event loop lag is %d', lag());
 
 `event-loop-lag` accepts a number of milliseconds representing how
 often to refresh the event loop lag measurement and returns a function
-you can call to receive the latest lag measurement.
+you can call to receive the latest lag measurement in milliseconds.
 
 ```js
 var lag = require('event-loop-lag')(1000);
@@ -26,7 +26,7 @@ var app = koa();
 
 app.use(function*(next){
   if ('/lag' == this.url)
-    this.body = lag();
+    this.body = lag() + ' milliseconds';
   else
     yield next;
 })

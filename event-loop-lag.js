@@ -28,6 +28,7 @@ module.exports = exports = function eventLoopLag(ms){
     setTimeout(check, ms).unref();
   }
 
+  // return the loop delay in milliseconds
   return function() {
     return delay;
   }
