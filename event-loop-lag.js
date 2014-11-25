@@ -17,15 +17,21 @@ module.exports = exports = function eventLoopLag(ms){
   var start = time();
   var delay = 0;
 
-  setTimeout(check, ms).unref();
+  var timeout = setTimeout(check, ms);
+  timeout.unref();
 
   function check(){
+    // workaround for https://github.com/joyent/node/issues/8364
+    clearTimeout(timeout);
+
     // how much time has actually elapsed in the loop beyond what
     // setTimeout says is supposed to happen
     var t = time();
     delay = t - start - ms;
     start = t;
-    setTimeout(check, ms).unref();
+
+    timeout = setTimeout(check, ms)
+    timeout.unref();
   }
 
   // return the loop delay in milliseconds
