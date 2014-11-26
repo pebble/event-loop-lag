@@ -1,4 +1,9 @@
 
+1.0.2 / 2014-11-26
+==================
+
+ * fix memory leak caused by unref() #3 [jlai](https://github.com/jlai)
+
 1.0.1 / 2014-09-01
 ==================
 
