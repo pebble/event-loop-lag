@@ -8,6 +8,10 @@
   },
   "author": "Aaron Heckmann <aaron.heckmann+github@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pebble/event-loop-lag.git"
+  },
   "dependencies": {
     "debug": "1.0.4"
   },
