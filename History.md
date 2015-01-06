@@ -1,4 +1,9 @@
 
+1.0.3 / 2015-01-06
+==================
+
+ * Add repository entry to package.json #5 from [achingbrain](https://github.com/achingbrain)
+
 1.0.2 / 2014-11-26
 ==================
 
