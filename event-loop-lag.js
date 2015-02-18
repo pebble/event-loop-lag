@@ -25,9 +25,15 @@ module.exports = exports = function eventLoopLag(ms){
     clearTimeout(timeout);
 
     // how much time has actually elapsed in the loop beyond what
-    // setTimeout says is supposed to happen
+    // setTimeout says is supposed to happen. we use setTimeout to
+    // cover multiple iterations of the event loop, getting a larger
+    // sample of what the process is working on.
     var t = time();
-    delay = t - start - ms;
+
+    // we use Math.max to handle case where timers are running efficiently
+    // and our callback executes earlier than `ms` due to how timers are
+    // implemented. this is ok. it means we're healthy.
+    delay = Math.max(0, t - start - ms);
     start = t;
 
     timeout = setTimeout(check, ms)
