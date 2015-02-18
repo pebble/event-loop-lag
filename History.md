@@ -1,4 +1,10 @@
 
+1.1.0 / 2015-02-18
+==================
+
+ * fixed; report healthy event loops as 0
+ * test; remove --harmony-generators flag
+
 1.0.3 / 2015-01-06
 ==================
 

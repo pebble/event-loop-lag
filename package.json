@@ -1,6 +1,6 @@
 {
   "name": "event-loop-lag",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Measure event loop lag",
   "main": "event-loop-lag.js",
   "scripts": {
