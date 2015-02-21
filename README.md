@@ -51,7 +51,7 @@ npm install event-loop-lag --save
 `event-loop-lag` supports the `debug` module for help during development.
 Enable verbose logging by setting your `DEBUG` env variable like so:
 
-````
+```
 DEBUG=event-loop-lag* npm test
 ```
 
