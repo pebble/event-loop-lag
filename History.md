@@ -1,4 +1,10 @@
 
+1.2.0 / 2016-11-05
+==================
+
+  * chore(package): Update debug to 2.2.0 #8 from [sommestad](https://github.com/sommestad)
+  * Extra ' breaking formatting in README.md #7 from [kennethlimcp](https://github.com/kennethlimcp)
+
 1.1.0 / 2015-02-18
 ==================
 
