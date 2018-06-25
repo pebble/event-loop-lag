@@ -1,3 +1,11 @@
+
+1.4.0 / 2018-06-25
+==================
+
+  * Update mocha to 5.2.0, istanbul-harmony to istanbul 0.4.5
+  * chore: Test on latest node versions #12 from [danez](https://github.com/danez)
+  * chore: Update debug to 3.1.0 #11 from [danez](https://github.com/danez)
+
 1.3.0 / 2017-06-27
 ==================
 
