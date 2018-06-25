@@ -16,7 +16,7 @@
     "debug": "^3.1.0"
   },
   "devDependencies": {
-    "mocha": "^1.21.4",
-    "istanbul-harmony": "^0.3.0"
+    "mocha": "^5.2.0",
+    "istanbul": "^0.4.5"
   }
 }
